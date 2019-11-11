@@ -30,7 +30,11 @@ section {
 	min-width: 10px;
 	padding: 1rem 0;
 	min-height: 300px;
-	display: block;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	
+
 }
 
 
@@ -38,30 +42,52 @@ section {
 	min-width: 20px;
 	min-height: 70px;
 	margin: 10px;
+	flex-grow: 1;
 }
 
 .trolley-grey {
 	background: #7D7C84;
+	order: 1;
+
 }
 
 .sea-green {
 	background: #2D93AD;
+
+
 }
 
 .middle-red {
 	background: #DE8F6E;
 
+
 }
 
 .black {
 	background: #000;
+
+
 }
 
 .orange {
 	background: orange;
+	order: -1;
+
 
 }
 
 .olive {
 	background: olive;
+}
+@media (min-width:768px) {
+	.row{
+		display: block;
+	}
+}
+
+@media (min-width: 1200px) {
+	section{
+		background: red;
+	}
+
 }
